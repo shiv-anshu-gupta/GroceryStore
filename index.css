@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#welcomepage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #add8e6; /* Light blue */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 10px;
+}
+
+#tagLineWelcomePage {
+  font-size: small;
+}
+
+.Scrollarrow {
+  border: 3px solid gray;
+  border-radius: 40%;
+  text-align: center;
+}
+
+.Scrollarrow:hover {
+  border: 3px solid rgb(249, 73, 73);
+  transform: rotate(90deg);
+  box-shadow: 0 6px 12px rgba(255, 0, 166, 0.6);
+  transition: 1s ease;
+  color: rgb(240, 145, 145);
+  background-color: rgb(255, 255, 255);
+}
+
+#main-page {
+  width: 100vw;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space between the logo, search, and buttons */
+  align-items: center; /* Center the items vertically */
+  padding: 10px 20px; /* Add padding for better spacing */
+  background-image: url(main-back.jpg);
+  background-size: cover;
+}
+
+.logo {
+  font-size: 1.5rem; /* Increase font size for the logo */
+  font-weight: bold;
+  color: white; /* Ensure it's readable */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 20px; /* Add some space between logo and search bar */
+}
+
+.search input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #555;
+}
+
+.cart,
+.about,
+.login {
+  color: white; /* Change text color to white for readability */
+  margin-left: 20px;
+}
+
+.cart button,
+.about button,
+.login button {
+  padding: 10px 20px; /* Consistent padding for buttons */
+  background-color: aqua;
+  color: darkgreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cart button:hover,
+.about button:hover,
+.login button:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.login button {
+  background-color: aqua;
+  color: darkgreen;
+}
+
+#btn1 {
+  background-color: aqua;
+  color: darkgreen;
+}
+
+.cart button {
+  height: 3rem; /* Fixed height for the Add to Cart button */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  background-color: aqua;
+  color: darkgreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart button:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#left {
+  width: 80vw;
+  height: 100vh;
+  background-image: url(main-back.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-around;
+  overflow-y: auto;
+}
+
+.card {
+  flex: 1 1 calc(25% - 2rem);
+  margin: 0.5rem;
+  max-width: 18rem;
+  max-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 40%;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right {
+  width: 20vw;
+  height: 100vh;
+  background-image: url(main-back.jpg);
+  text-align: center;
+  overflow-y: auto;
+}
+
+.right h2 {
+  background-color: aqua;
+}
+
+.right ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.right ul li {
+  padding: 5px 0;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.right ul li:hover {
+  transform: scale(1.5);
+}
+
+#about-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(about-back.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+
+#about-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10%;
+}
+
+#left-about {
+  width: 35%;
+  height: 70%;
+  border: 1px solid red;
+  border-radius: 40%;
+  overflow: hidden;
+}
+
+#owner {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+#right-about {
+  width: 75%;
+  height: 100%;
+  color: #515151;
+  flex-wrap: wrap;
+  background-image: url("text-background.jpg");
+  margin-left: 10%;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+#about-heading {
+  text-align: center;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+#toTop:hover {
+  background-color: #555;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  z-index: 10; /* Ensure it appears above other content */
+}
+
+.hidden {
+  display: none; /* Hides elements */
+}
+
+.form {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  width: 500px;
+  top: 150vh;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Ensure it appears above the overlay */
+  background-image: url("login-back.jpg"); /* Ensure the path is correct */
+  background-size: cover; /* Ensures the image covers the entire form */
+  background-position: center; /* Centers the image within the form */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Spacing between input fields */
+}
+
+.input-group label {
+  display: block; /* Labels on a new line */
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels for better visibility */
+}
+
+.input-group input {
+  width: 100%; /* Make input fields full width */
+  padding: 10px; /* Add padding for better aesthetics */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Round corners */
+}
+
+.submit-btn {
+  width: 100%; /* Make button full width */
+  padding: 10px; /* Add padding */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Round corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.register-link {
+  display: block; /* Block link below the button */
+  margin-top: 10px; /* Space above link */
+  text-align: center; /* Center align the link */
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.register-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
